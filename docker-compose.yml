@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "5125:5125"
+    volumes:
+      - ./data:/var/lib/growthforecast
